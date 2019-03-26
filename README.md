@@ -23,43 +23,38 @@ To help in the preparation to tech interview, or study basic data structures. It
     <p>In process</p>
   </li>
   
-   <li>
-    <h3>3.) Queue</h3>
+  <li>
+    <h3>4.) Set</h3>
     <p>In process</p>
   </li>
   
   <li>
-    <h3>3.) Set</h3>
+    <h3>5.) Map</h3>
     <p>In process</p>
   </li>
   
   <li>
-    <h3>3.) Map</h3>
+    <h3>6.) Hash tables</h3>
     <p>In process</p>
   </li>
   
   <li>
-    <h3>3.) Hash tables</h3>
+    <h3>7.) Binary-tree</h3>
     <p>In process</p>
   </li>
   
   <li>
-    <h3>3.) Binary-tree</h3>
+    <h3>8.) Prefix-tree</h3>
     <p>In process</p>
   </li>
   
   <li>
-    <h3>3.) Prefix-tree</h3>
+    <h3>9.) Binary Heap</h3>
     <p>In process</p>
   </li>
   
   <li>
-    <h3>3.) Binary Heap</h3>
-    <p>In process</p>
-  </li>
-  
-  <li>
-    <h3>3.) Graph</h3>
+    <h3>10.) Graph</h3>
     <p>In process</p>
   </li>
 </ul>
