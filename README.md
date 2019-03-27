@@ -10,7 +10,7 @@ To help in the preparation to tech interview, or study basic data structures. It
 <ul>
   <li>
     <h3>1.) Linked List</h3>
-    <p>In process</p>
+    <p>a Linked list is a linear collection of data elements, whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence. In its most basic form, each node contains: data, and a reference (in other words, a link) to the next node in the sequence. This structure allows for efficient insertion or removal of elements from any position in the sequence during iteration. More complex variants add additional links, allowing more efficient insertion or removal of nodes at arbitrary positions.</p>
   </li>
   
    <li>
