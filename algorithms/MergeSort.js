@@ -23,10 +23,10 @@ const mergeSort = (arr, comparator = defaultComparator) => {
     const leftArray = arr.slice(0, mid);
     const rightArray = arr.slice(mid);
 
-    return merge(mergeSort(leftArray), mergeSort(rightArray))
+    return merge(mergeSort(leftArray), mergeSort(rightArray), comparator)
 };
 
-const merge = (firstArr, secondArr) => {
+const merge = (firstArr, secondArr, comparator) => {
     const sortedArr = [];
     let i = 0,
         j = 0;
@@ -35,8 +35,10 @@ const merge = (firstArr, secondArr) => {
     const secondArrEnd = secondArr.length - 1;
 
     while (i <= firstArrEnd && j <= secondArrEnd ) {
+        const compare = comparator(firstArr[i], secondArr[j]);
+
         sortedArr.push(
-            firstArr[i] < secondArr[j] ? firstArr[i++] : secondArr[j++]
+            compare === -1 ? firstArr[i++] : secondArr[j++]
         )
     }
 
