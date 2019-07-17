@@ -55,7 +55,38 @@ const quickSort = (array, comparator = defaultComparator) => {
     return sortedArray;
 };
 
+const simpleQuickSort = (array) => {
+    const pivot = array[Math.floor(array.length / 2)];
+    const less = [];
+    const greatest = [];
+    const pivots = [];
+
+    if (array.length <= 1) {
+        return array;
+    }
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < pivot) {
+            less.push(array[i]);
+        }
+
+        if (array[i] > pivot) {
+            greatest.push(array[i]);
+        }
+
+        if (array[i] === pivot) {
+            pivots.push(array[i])
+        }
+    }
+
+    return [
+        ...simpleQuickSort(less),
+        ...pivots,
+        ...simpleQuickSort(greatest)
+    ];
+};
 
 
 console.log('Quick sort', quickSort([1, 2, 8, 6, 3, 6, 8]));
+console.log('Simple quick sort', simpleQuickSort([1, 2, 8, 6, 3, 6, 6, 6, 6, 8]));
 
